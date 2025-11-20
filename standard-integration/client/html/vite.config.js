@@ -1,19 +1,13 @@
-import { defineConfig } from 'vite'
+```js
+            export default defineConfig({
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [],
-  envDir: "../",
-  envPrefix: "PAYPAL",
-  root: "src",
-  server: {
-    port: 3000,
-    proxy: {
-      "/api": {
-        target: "http://localhost:8080",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-  },
-})
+                server: {
+                    proxy: {
+                        "/api": {
+                            target: "http://10.0.0.53:8080", // Replace with your server URL
+                            changeOrigin: true,
+                        },
+                    },
+                },
+            });
+        ```
