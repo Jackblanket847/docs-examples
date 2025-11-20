@@ -15,7 +15,7 @@ PayPal Standard Integration sample in .NET
 
    - **Linux / MacOS**
 
-     ```bash
+     ```bashI
      export PAYPAL_CLIENT_ID="<PAYPAL_CLIENT_ID>"
      export PAYPAL_CLIENT_SECRET="<PAYPAL_CLIENT_SECRET>"
      ```
