@@ -7,12 +7,12 @@ GEM
       faraday-multipart (~> 1.0)
       nokogiri (~> 1.13, >= 1.13.10)
     apimatic_core_interfaces (0.2.1)
-    apimatic_faraday_client_adapter (0.1.4)
+    apimatic_faraday_client_adapter (0.1.6)
       apimatic_core_interfaces (~> 0.2.0)
       certifi (~> 2018.1, >= 2018.01.18)
       faraday (~> 2.0, >= 2.0.1)
       faraday-follow_redirects (~> 0.2)
-      faraday-gzip (~> 1.0)
+      faraday-gzip (>= 1, < 4)
       faraday-http-cache (~> 2.2)
       faraday-multipart (~> 1.0)
       faraday-net_http_persistent (~> 2.0)
@@ -26,9 +26,9 @@ GEM
       logger
     faraday-follow_redirects (0.3.0)
       faraday (>= 1, < 3)
-    faraday-gzip (1.0.0)
-      faraday (>= 1.0)
-      zlib (~> 2.1)
+    faraday-gzip (3.1.0)
+      faraday (>= 2.0, < 3)
+      zlib (~> 3.0)
     faraday-http-cache (2.5.1)
       faraday (>= 0.8)
     faraday-multipart (1.1.0)
@@ -100,7 +100,7 @@ GEM
       tilt (~> 2.0)
     tilt (2.6.0)
     uri (1.0.3)
-    zlib (2.1.1)
+    zlib (3.0.1)
 
 PLATFORMS
   aarch64-linux-gnu
